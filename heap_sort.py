@@ -20,11 +20,7 @@ def heap_sort(arr):
         arr[i], arr[0] = arr[0], arr[i]
         heapify(arr, i, 0)
 
-if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: python3 heap_sort.py data.txt")
-        sys.exit(1)
-    with open(sys.argv[1]) as f:
-        data = list(map(int, f.read().split()))[:100]
+def data(f):
+    data = list(map(int, f.read().split()))[:100]
     heap_sort(data)
     print(data)
