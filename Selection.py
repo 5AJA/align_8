@@ -16,4 +16,4 @@ with open(filename, "r", encoding="utf-8") as f:
 
 sorted_data = selection_sort(data)
 
-print("선택 정렬:", sorted_data)
+print("Selection:", sorted_data)
