@@ -22,6 +22,4 @@ if len(data) > 10000:
 sorted_data = quick_sort(data)
 
 # 출력
-print("정렬 전 데이터 개수:", len(data))
-print("정렬 전:", data)
-print("정렬 후:", sorted_data)
+print("퀵 정렬:", sorted_data)
