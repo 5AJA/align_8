@@ -1,5 +1,7 @@
+# selection.py
 
 def selection_sort(arr):
+
     n = len(arr)
     for i in range(n - 1):
         min_idx = i
@@ -9,11 +11,7 @@ def selection_sort(arr):
         arr[i], arr[min_idx] = arr[min_idx], arr[i]
     return arr
 
-filename = "data.txt"
-with open(filename, "r", encoding="utf-8") as f:
- 
-    data = [int(line.strip()) for line in f if line.strip()]
-
-sorted_data = selection_sort(data)
-
-print("Selection:", sorted_data)
+def data(f):
+    data = list(map(int, f.read().split()))[:100]
+    selection_sort(data)
+    print(data)
